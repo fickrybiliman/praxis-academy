@@ -2,6 +2,12 @@
    "configurations": [
       {
          "type": "java",
+         "name": "CodeLens (Launch) - objectPertama",
+         "request": "launch",
+         "mainClass": "objectPertama"
+      },
+      {
+         "type": "java",
          "name": "CodeLens (Launch) - inputPenjumlahanMatriks",
          "request": "launch",
          "mainClass": "inputPenjumlahanMatriks"
