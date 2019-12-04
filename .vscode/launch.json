@@ -2,6 +2,12 @@
    "configurations": [
       {
          "type": "java",
+         "name": "CodeLens (Launch) - inputPenjumlahanMatriks",
+         "request": "launch",
+         "mainClass": "inputPenjumlahanMatriks"
+      },
+      {
+         "type": "java",
          "name": "CodeLens (Launch) - penjumlahanMatriks",
          "request": "launch",
          "mainClass": "penjumlahanMatriks"
