@@ -2,6 +2,12 @@
    "configurations": [
       {
          "type": "java",
+         "name": "CodeLens (Launch) - MySimpleGenerics",
+         "request": "launch",
+         "mainClass": "MySimpleGenerics"
+      },
+      {
+         "type": "java",
          "name": "CodeLens (Launch) - RetentionTest",
          "request": "launch",
          "mainClass": "RetentionTest"
