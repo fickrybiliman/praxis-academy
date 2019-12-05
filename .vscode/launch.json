@@ -2,6 +2,12 @@
    "configurations": [
       {
          "type": "java",
+         "name": "CodeLens (Launch) - RetentionTest",
+         "request": "launch",
+         "mainClass": "RetentionTest"
+      },
+      {
+         "type": "java",
          "name": "CodeLens (Launch) - SuppressWarningTest",
          "request": "launch",
          "mainClass": "SuppressWarningTest"
