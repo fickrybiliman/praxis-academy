@@ -2,6 +2,18 @@
    "configurations": [
       {
          "type": "java",
+         "name": "CodeLens (Launch) - Derived",
+         "request": "launch",
+         "mainClass": "Derived"
+      },
+      {
+         "type": "java",
+         "name": "CodeLens (Launch) - latihan",
+         "request": "launch",
+         "mainClass": "latihan"
+      },
+      {
+         "type": "java",
          "name": "CodeLens (Launch) - HelloWorld",
          "request": "launch",
          "mainClass": "HelloWorld"
