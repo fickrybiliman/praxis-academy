@@ -2,6 +2,12 @@
    "configurations": [
       {
          "type": "java",
+         "name": "CodeLens (Launch) - GroceryStore",
+         "request": "launch",
+         "mainClass": "GroceryStore"
+      },
+      {
+         "type": "java",
          "name": "CodeLens (Launch) - MyBoundedClassEx",
          "request": "launch",
          "mainClass": "MyBoundedClassEx"
