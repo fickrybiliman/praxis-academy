@@ -1,2 +1,2 @@
 # praxis-academy
-Bootcamp Full Stack Developer
+Enterprise Full Stack Developer
