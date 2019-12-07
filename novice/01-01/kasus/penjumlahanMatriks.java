@@ -10,12 +10,42 @@ public class penjumlahanMatriks {
                       {44, 55, 66}, 
                       {77, 88, 99} 
                     };
+      
+      // Print Matriks 1
+      String printSatu = "";
+      
+      for (int i = 0; i < satu.length; i++) {
+         for (int j = 0; j < satu[i].length; j++) {
+            printSatu += satu[i][j] + "  ";
+         }
+         System.out.println("|  " + printSatu + "|");
+         printSatu = "";
+      }
+
+      System.out.println("      + ");
+
+      // Print Matriks 2
+      String printDua = "";
+
+      for (int i = 0; i < dua.length; i++) {
+         for (int j = 0; j < dua[i].length; j++) {
+            printDua += dua[i][j] + "  ";
+         }
+         System.out.println("|  " + printDua + "|");
+         printDua = "";
+      }
+
+      System.out.println("      = ");
+
+      // Print Matriks Sum
+      String printSum = "";
 
       for (int i = 0; i < satu.length; i++) {
          for (int j = 0; j < satu[i].length; j++) {
-            System.out.print(satu[i][j] + dua[i][j] + " ");
+            printSum += satu[i][j] + dua[i][j] + "  ";
          }
-         System.out.println();
+         System.out.println("|  " + printSum + "|");
+         printSum = "";
       }
    }
 }
