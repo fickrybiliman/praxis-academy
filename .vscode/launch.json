@@ -2,6 +2,12 @@
    "configurations": [
       {
          "type": "java",
+         "name": "CodeLens (Launch) - DomParserDemo",
+         "request": "launch",
+         "mainClass": "DomParserDemo"
+      },
+      {
+         "type": "java",
          "name": "CodeLens (Launch) - SerialExample",
          "request": "launch",
          "mainClass": "SerialExample"
