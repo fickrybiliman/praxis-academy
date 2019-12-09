@@ -2,6 +2,12 @@
    "configurations": [
       {
          "type": "java",
+         "name": "CodeLens (Launch) - JsonEncodeDemo",
+         "request": "launch",
+         "mainClass": "JsonEncodeDemo"
+      },
+      {
+         "type": "java",
          "name": "CodeLens (Launch) - DomParserDemo",
          "request": "launch",
          "mainClass": "DomParserDemo"
