@@ -2,6 +2,12 @@
    "configurations": [
       {
          "type": "java",
+         "name": "CodeLens (Launch) - DemoSerializable",
+         "request": "launch",
+         "mainClass": "DemoSerializable"
+      },
+      {
+         "type": "java",
          "name": "CodeLens (Launch) - AtmMachine",
          "request": "launch",
          "mainClass": "AtmMachine"
