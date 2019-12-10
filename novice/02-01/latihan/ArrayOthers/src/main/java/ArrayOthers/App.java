@@ -23,6 +23,14 @@ public class App {
 
         System.out.println("----------------------------");
 
-        
+        System.out.println("Array For All : ");
+        Array_forAll afa = new Array_forAll();
+        afa.printArrayForAll();
+
+        System.out.println("----------------------------");
+
+        System.out.println("Array Map : ");
+        Array_map am = new Array_map();
+        am.printArrayMap();
     }
 }
