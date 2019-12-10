@@ -2,6 +2,12 @@
    "configurations": [
       {
          "type": "java",
+         "name": "CodeLens (Launch) - ReadXML",
+         "request": "launch",
+         "mainClass": "main.java.JsonVsXml.ReadXML"
+      },
+      {
+         "type": "java",
          "name": "CodeLens (Launch) - JsonEncodeDemo",
          "request": "launch",
          "mainClass": "JsonEncodeDemo"
