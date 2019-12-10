@@ -38,5 +38,11 @@ public class App {
         System.out.println("List Map : ");
         List_map lm = new List_map();
         lm.printListMap();
+
+        System.out.println("----------------------------");
+
+        System.out.println("Option Bind : ");
+        Option_bind ob = new Option_bind();
+        ob.printOptionBind();
     }
 }
