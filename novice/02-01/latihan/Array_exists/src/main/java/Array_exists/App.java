@@ -10,7 +10,14 @@ public class App {
 
     public static void main(String[] args) {
         // System.out.println(new App().getGreeting());
+
+        System.out.println("Array Exist");
         Array_exists ae = new Array_exists();
         ae.printArrayExists();
+
+        System.out.println();
+
+        System.out.println("Array Filter");
+        
     }
 }
