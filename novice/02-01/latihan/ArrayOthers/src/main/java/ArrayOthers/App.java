@@ -32,5 +32,11 @@ public class App {
         System.out.println("Array Map : ");
         Array_map am = new Array_map();
         am.printArrayMap();
+
+        System.out.println("----------------------------");
+
+        System.out.println("List Map : ");
+        List_map lm = new List_map();
+        lm.printListMap();
     }
 }
