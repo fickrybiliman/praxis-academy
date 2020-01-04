@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Removing & Replacing Nodes using removeChild() & replaceChild()</title>
+</head>
+<body>
+   <div id="A">Hi</div>
+   <div id="B">Dude</div>
+
+   <script>
+
+      // remove element node
+      let divA = document.getElementById('A');
+      divA.parentNode.removeChild(divA);
+
+      // remove text node
+      let divB = document.getElementById('B').firstChild;
+      console.log(divB);
+      
+      divB.parentNode.removeChild(divB);
+
+      // log the new DOM updates, which should only show the remaining empty div#B
+      console.log(document.body.innerHTML);
+      
+   </script>
+</body>
+</html>

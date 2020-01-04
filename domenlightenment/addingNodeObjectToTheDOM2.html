@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>addingNodeObjectToTheDOM 2</title>
+</head>
+<body>
+   <ul>
+      <li>2</li>
+      <li>3</li>
+   </ul>
+
+   <script>
+
+      // create a text node and li element node and append the text to the li
+      let text1 = document.createTextNode('1');
+      let li = document.createElement('li');
+      li.appendChild(text1);
+
+      // select the ul in the document
+      let ul = document.querySelector('ul');
+
+      /*
+      add the li element we created above the DOM, 
+      notice i call on <ul> and pass reference to <li>2</li>
+      */
+     ul.insertBefore(li, ul.firstChild);
+
+     console.log(document.body.innerHTML);
+     /*logs
+      <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      </ul>
+     */
+     
+   </script>
+</body>
+</html>

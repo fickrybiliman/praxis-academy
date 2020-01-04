@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Insert Adjacent Test</title>
+</head>
+<body>
+
+   <i id="elm">how</i>
+   
+   <script>
+      
+      let elm = document.getElementById('elm');
+      
+      elm.insertAdjacentHTML('beforebegin', '<span>Hey-</span>');
+      elm.insertAdjacentHTML('afterbegin', '<span>dude-</span>');
+      elm.insertAdjacentHTML('beforeend','<span>--are</span>');
+      elm.insertAdjacentHTML('afterend', '<span>-you?</span>');
+      // elm.insertAdjacentHTML
+      // Hey-dude-how
+      console.log(document.body.innerHTML);
+      
+   </script>
+
+</body>
+
+</html>

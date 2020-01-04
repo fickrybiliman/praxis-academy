@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Cloning nodes using cloneNode()</title>
+</head>
+<body>
+   <ul>
+      <li>Hi</li>
+      <li>there</li>
+   </ul>
+
+   <script>
+      let cloneUL = document.querySelector('ul').cloneNode(true);
+
+      console.log(cloneUL.constructor); //logs HTMLUListElement()
+      console.log(cloneUL.innerHTML); //logs (an empty string) as only the ul was cloned
+      
+   </script>
+</body>
+</html>

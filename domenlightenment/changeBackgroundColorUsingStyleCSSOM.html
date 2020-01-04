@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Change Background Color Using Style on CSSOM (CSS Object Model)</title>
+
+   <style>
+      body {
+         padding: 0 20px;
+         line-height: 1.4;
+         font-size: 1.3em;
+         font-family: Helvetica, Arial, sans-serif;
+      }
+      main {
+         max-width: 600px;
+         margin: 0 auto;
+      }
+      code {
+         color: firebrick;
+      }
+   </style>
+</head>
+<body>
+   <main>
+      <h2>Using the <code>style</code> property to change the background color</h2>
+      <p>Select a color for this page's background :</p>
+      
+      <input type="radio" name="colors" value="transparent" id="transparent" checked>
+      <label for="transparent">Transparent<br />
+      
+      <input type="radio" name="colors" value="blanchedalmond" id="BlanchedAlmond">
+      <label for="BlanchedAlmond">BlanchedAlmond<br />
+      
+      <input type="radio" name="colors" value="CadetBlue" id="CadetBlue">
+      <label for="CadetBlue"> CadetBlue<br />
+   
+      <input type="radio" name="colors" value="LavenderBlush" id="LavenderBlush">
+      <label for="LavenderBlush"> LavenderBlush<br />
+   
+      <input type="radio" name="colors" value="LemonChiffon" id="LemonChiffon">
+      <label for="LemonChiffon"> LemmonChiffon<br />
+   
+      <p>
+         The Rendered HTML looks like this: 
+         <br /><code>&lt;body style="background color: <output></output>"&gt;
+      </p>
+   </main>
+
+   <script>
+      let myInputs = document.querySelectorAll('input');
+      let op = document.querySelector('output');
+      let body = document.body;
+      
+      body.style.backgroundColor = 'transparent';
+      op.innerHTML = 'transparent';
+
+      for (i in myInputs) {
+         (function(i) {
+            myInputs[i].addEventListener('focus', function() {
+               body.style.backgroundColor = this.value;
+               op.innerHTML = this.value;
+            });
+         })(i);
+      }
+   </script>
+   
+</body>
+</html>

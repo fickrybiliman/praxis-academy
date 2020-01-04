@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Removing & Replacing Nodes using replaceChild()</title>
+</head>
+<body>
+   <div id="A">Hi</div>
+   <div id="B">Dude</div>
+
+   <script>
+      
+      // replace element node
+      let divA = document.getElementById('A');
+      let newSpan = document.createElement('span');
+      newSpan.textContent = "Howdy";
+      divA.parentNode.replaceChild(newSpan, divA);
+
+      // replace text node
+      let divB = document.getElementById('B');
+      let newText = document.createTextNode('buddy');
+      divB.parentNode.replaceChild(newText, divB);
+
+      // log the new DOM updates,
+      console.log(document.body.innerHTML);
+
+   </script>
+</body>
+</html>

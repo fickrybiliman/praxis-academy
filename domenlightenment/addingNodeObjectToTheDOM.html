@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Adding Node Object to the DOM using appendChild()</title>
+</head>
+<body>
+   <p>Hi</p>
+   
+   <script>
+      //create a blink element node and text node
+      let elementNode = document.createElement('strong');
+      let textNode = document.createTextNode(' Dude');
+
+      //append these nodes to the DOM
+      document.querySelector('p').appendChild(elementNode);
+      document.querySelector('strong').appendChild(textNode);
+      
+      //log's <p>Hi<strong> Dude</strong></p>
+      console.log(document.body.innerHTML);
+   </script>
+</body>
+</html>
