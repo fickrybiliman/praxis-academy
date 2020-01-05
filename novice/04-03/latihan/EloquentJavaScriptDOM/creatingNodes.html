@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Creating Nodes</title>
+</head>
+<body>
+   <p>
+      <img src="Paint.jpg" alt="Paint" width="500" height="500"> <b> Abstract from</b>
+      <img src="Pilot.jpg" alt="Pilot" width="500" height="500">
+   </p>
+
+   <p><button onclick="replaceImages()">Replace</button></p>
+
+   <script>
+      function replaceImages() {
+         let images = document.body.getElementsByTagName('img');
+         for (let i = images.length - 1; i >= 0; i--) {
+            let image = images[i];
+            if (image.alt) {
+               let text = document.createTextNode(image.alt);
+               image.parentNode.replaceChild(text, image);
+            }
+         }
+      }
+   </script>
+</body>
+</html>

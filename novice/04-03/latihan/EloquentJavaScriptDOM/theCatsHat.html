@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>The Cat's Hat</title>
+
+   <style>
+      body {
+         min-height: 200px;
+      }
+   </style>
+</head>
+<body>
+   <img src="Pilot.jpg" alt="" id="pilot" style="position: absolute">
+   <img src="Paint.jpg" alt="" id="paint" style="position: absolute">
+
+   <script>
+      let pilot = document.querySelector("#pilot");
+      let paint = document.querySelector"#paint");
+
+      let angle = 0;
+      let lastTime = null;
+
+      function animate(time) {
+         if (lastTime != null) {
+            angle += (time - lastTime) * 0.001;
+         }
+         lastTime = time;
+         pilot.style.top = (Math.sin(angle) * 40 + 40) + "px";
+         pilot.style.left = (Math.cos(angle) * 200 + 230) + "px";
+         
+         paint.style.top = (Math.sin(angle + Math.PI) * 40 + 40) + "px";
+         paint.style.left = (Math.cos(angle + Math.PI) * 200 + 230) + "px";
+         // Your extensions here
+         requestAnimationFrame(animate);
+      }
+      requestAnimationFrame(animate);
+   </script>
+</body>
+</html>
