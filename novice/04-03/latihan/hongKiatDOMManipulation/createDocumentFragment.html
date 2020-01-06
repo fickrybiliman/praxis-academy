@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Create Document Fragment</title>
+   <style>
+      table, tr, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         padding: 3px;
+      }
+   </style>
+</head>
+<body>
+   <table></table>
+
+   <script>
+      let table = document.querySelector('table');
+      let df = document.createDocumentFragment();
+
+      for (let i = 0; i < 5; i++) {
+         let td = document.createElement('td');
+         let tr = document.createElement('tr');
+
+         td.textContent = i;
+         
+         tr.appendChild(td);
+         df.appendChild(tr);
+      }
+
+      table.appendChild(df);
+      
+   </script>
+</body>
+</html>

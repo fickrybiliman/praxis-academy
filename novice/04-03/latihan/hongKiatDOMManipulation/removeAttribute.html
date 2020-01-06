@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Remove Attribute</title>
+</head>
+<body>
+   <div style="color: tomato;">Hallo Guys, I wanna remove attribute HTML Element</div>
+
+   <script>
+      let div = document.querySelector('div');
+      console.log(div.getAttribute('style'));
+      div.removeAttribute('style');
+      console.log(div.getAttribute('style'));
+      
+   </script>
+</body>
+</html>
